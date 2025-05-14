@@ -1,30 +1,21 @@
 # Alma Immigration Lead Management - System Design
 **Deployed App**: [https://alma-leads.vercel.app](https://alma-leads.vercel.app)
 
-## 1. System Architecture
-```mermaid
-flowchart TD
-    Client[Client Browser] --> FE[Next.js Frontend]
-    FE --> API[API Routes]
-    API --> Auth[NextAuth]
-    API --> Storage[(In-Memory)]
-    Admin --> FE
-```
 
-## 2. Tech Stack
+## 1. Tech Stack
 - **Frontend**: Next.js 15.3.2, Tailwind CSS, React Hook Form
 - **Backend**: Next.js API Routes, NextAuth.js
 - **Validation**: Zod
 - **Deployment**: Vercel (alma-leads.vercel.app)
 - **Development**: Local ports 3000-3002, supports Turbopack
 
-## 3. Core Features
+## 2. Core Features
 - Public lead form submission
 - Admin dashboard with authentication
 - Lead status management (Pending/Reached Out)
 - Resume file upload support
 
-## 4. Data Model
+## 3. Data Model
 ```typescript
 interface Lead {
   id: string;
