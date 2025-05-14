@@ -4,7 +4,7 @@ import { z } from 'zod';
 import type { Lead } from '@/types/lead';
 
 // Mock database for demo purposes
-export const leads: Lead[] = [];
+const leads: Lead[] = [];
 
 export async function POST(req: Request) {
   try {
